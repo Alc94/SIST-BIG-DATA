@@ -1,0 +1,12 @@
+myvenv/
+**/myvenv/
+__pycache__
+**/data/
+*.json
+*.pyc
+entregable_refugio/mysql/data/
+entregable_refugio/postgres/data/
+entregable_refugio/mariadb/data/
+myvenv/
+__pycache__/
+*.pyc

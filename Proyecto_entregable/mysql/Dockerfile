@@ -1,0 +1,4 @@
+FROM mysql:latest
+ENV MYSQL_ROOT_PASSWORD=mi_password
+ENV MYSQL_DATABASE=refugio_db
+EXPOSE 3306
