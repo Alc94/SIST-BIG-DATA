@@ -1,0 +1,10 @@
+# Comandos de ejecución con Volúmenes
+
+**MySQL:**
+docker run -d --name mi_mysql -v ./data:/var/lib/mysql -p 3306:3306 mysql-archivo
+
+**PostgreSQL:**
+docker run -d --name mi_postgres -v ./data:/var/lib/postgresql/data -p 5432:5432 postgres-archivo
+
+**MariaDB:**
+docker run -d --name mi_mariadb -v ./data:/var/lib/mysql -p 3307:3306 mariadb-archivo
