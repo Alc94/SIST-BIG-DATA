@@ -44,14 +44,31 @@ def ejercicio02(r):
 def ejercicio03(r):
     titulo(3, "Obtener y mostrar un registro en base a una clave.", "Mediante GET, leemos el valor de una clave en concreto. Si no existe, Redis devuelve NONE.")
 
-    clave = "perro:3"
+    clave = "perros:3"
     valor = r.get(clave)
     print(f"    GET {clave}: {valor}.")
     
-    clave_inexistente = "perro:99"
+    clave_inexistente = "perros:99"
     valor_inexistente = r.get(clave_inexistente)
 
     print(f"    GET {clave_inexistente}: {valor_inexistente}.")
+
+""" 4- Actualizar el valor de una clave """
+def ejercicio04(r):
+    titulo(4, "Actualizar el valor de una clave.", "Usar SET sobre una clave existente: Redis lo sobreescribe.")
+
+    clave = "perros:2"
+
+    if not r.exists(clave):
+        print(f" La vale '{clave}' no existe, ejecuta antes del ejercicio 1.")
+        return
+
+    valor_antiguo = r.get(clave)
+    print(f" Valor antes de actualizar: GET {clave}: {valor_antiguo}")
+
+    r.set(clave, "Galgo")
+    print(f" SET {clave}: Galgo")
+
 
 if __name__ == "__main__":
     r = conectar()
@@ -59,3 +76,4 @@ if __name__ == "__main__":
     ejercicio01(r)
     ejercicio02(r)
     ejercicio03(r)
+    ejercicio04(r)
