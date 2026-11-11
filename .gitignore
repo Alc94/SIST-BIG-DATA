@@ -1,0 +1,12 @@
+# Entornos virtuales
+myvenv/
+.venv/
+venv/
+
+# Python
+__pycache__/
+*.pyc
+
+# Datos de contenedores
+**/data/
+.env

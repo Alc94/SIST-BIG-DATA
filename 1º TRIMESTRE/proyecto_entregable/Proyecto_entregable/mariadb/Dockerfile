@@ -1,0 +1,4 @@
+FROM mariadb:latest
+ENV MARIADB_ROOT_PASSWORD=mi_password
+ENV MARIADB_DATABASE=refugio_mariadb
+EXPOSE 3306
