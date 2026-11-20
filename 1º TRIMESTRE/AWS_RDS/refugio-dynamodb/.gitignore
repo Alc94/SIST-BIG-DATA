@@ -1,0 +1,4 @@
+.env
+venv-refugio/
+boto3-venv/
+__pycache__/

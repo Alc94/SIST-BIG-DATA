@@ -1,0 +1,99 @@
+{
+  "filtros": {
+    "rds": {
+      "estado": "Disponible",
+      "tamano": null
+    },
+    "dynamodb": {
+      "tipo": "Vacuna",
+      "desde": "2025-04-01"
+    }
+  },
+  "total_perros": 5,
+  "perros": [
+    {
+      "perro_id": 1,
+      "nombre": "Toby",
+      "raza": "Labrador",
+      "tamano": "Grande",
+      "sexo": "Macho",
+      "estado": "Disponible",
+      "fecha_ingreso": "2025-01-15",
+      "historial_medico": [],
+      "total_eventos": 0,
+      "coste_total": 0
+    },
+    {
+      "perro_id": 2,
+      "nombre": "Luna",
+      "raza": "Mestizo",
+      "tamano": "Mediano",
+      "sexo": "Hembra",
+      "estado": "Disponible",
+      "fecha_ingreso": "2025-02-20",
+      "historial_medico": [],
+      "total_eventos": 0,
+      "coste_total": 0
+    },
+    {
+      "perro_id": 5,
+      "nombre": "Rocky",
+      "raza": "Beagle",
+      "tamano": "Mediano",
+      "sexo": "Macho",
+      "estado": "Disponible",
+      "fecha_ingreso": "2025-04-02",
+      "historial_medico": [
+        {
+          "fecha": "2025-04-03",
+          "tipo": "Vacuna",
+          "descripcion": "Polivalente",
+          "veterinario": "Dr. Vega",
+          "coste": 35
+        }
+      ],
+      "total_eventos": 1,
+      "coste_total": 35
+    },
+    {
+      "perro_id": 7,
+      "nombre": "Thor",
+      "raza": "Pastor Alemán",
+      "tamano": "Grande",
+      "sexo": "Macho",
+      "estado": "Disponible",
+      "fecha_ingreso": "2025-05-10",
+      "historial_medico": [
+        {
+          "fecha": "2025-05-11",
+          "tipo": "Vacuna",
+          "descripcion": "Rabia",
+          "veterinario": "Dra. Soto",
+          "coste": 25
+        }
+      ],
+      "total_eventos": 1,
+      "coste_total": 25
+    },
+    {
+      "perro_id": 8,
+      "nombre": "Lola",
+      "raza": "Mestizo",
+      "tamano": "Mediano",
+      "sexo": "Hembra",
+      "estado": "Disponible",
+      "fecha_ingreso": "2025-06-01",
+      "historial_medico": [
+        {
+          "fecha": "2025-06-02",
+          "tipo": "Vacuna",
+          "descripcion": "Polivalente",
+          "veterinario": "Dra. Soto",
+          "coste": 35
+        }
+      ],
+      "total_eventos": 1,
+      "coste_total": 35
+    }
+  ]
+}
