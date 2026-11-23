@@ -1,16 +1,7 @@
-from pymongo import MongoClient
-import os
-from dotenv import load_dotenv
+from Conector import ConectorMongoDB
 
-load_dotenv()
-
-# VARIABLES DE ENTORNO
-usuario= os.getenv("USUARIO_MONGODB")
-password = os.getenv("PASSWORD_MONGODB")
-cluster= os.getenv("CLUSTER_MONGODB")
-dominio = os.getenv("DOMINIO_MONGODB")
-
-cliente = MongoClient(f'mongodb+srv://{usuario}:{password}@{cluster}.{dominio}.mongodb.net/')
+conector = ConectorMongoDB()
+cliente = conector.conectarse()
 
 libreriaBD = cliente["libreria"]
 librosColeccion = libreriaBD["libros"]

@@ -1,0 +1,8 @@
+bases de datos MySQL (en local)		BASES DE DATOS RELACIONALES
+RDS en AWS (en la nube)
+
+Redis (en local)			CLAVE-VALOR
+DynamoDB (en la nube)
+					NoSQL
+MongoDB (en local)			DOCUMENTO
+Atlas (en la nube)
